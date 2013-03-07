@@ -15,17 +15,14 @@ import de.odysseus.staxon.json.JsonXMLConfig;
 import de.odysseus.staxon.json.JsonXMLConfigBuilder;
 import de.odysseus.staxon.json.JsonXMLOutputFactory;
 
-/**
- * convertir un fichier du format Moodle_XML au format JSON utilisation de l'API
- * StAX
- * 
+/**convertir un fichier du format Moodle_XML au format JSON utilisation de 
+ * l'API StAX
  * @author Ndèye Mariane NDIAYE & Mohamed Amine LOUHIDI *
  */
 
 public class XMLtoJSON {
 
-	/**
-	 * Méthode effectuant le parse d'un fichier du format Moodle XML au format
+	/**Méthode effectuant le parse d'un fichier du format Moodle XML au format
 	 * Json Le resulat de la conversion est redirigé dans le fichier
 	 * ConversionXMLToJSON.json
 	 * 
