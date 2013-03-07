@@ -1,22 +1,7 @@
 package dcll.nndi.projetdcll;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-        System.out.println( "Hello World!" );
-        System.out.println( "Hello World! Diallo" );
-        System.out.println( "Hello World! Diallo" );
-        System.out.println( "Hello World! Diallo" );
-        System.out.println( "Hello World! Diallo5" );
-        System.out.println( "Hello World! amel" );
-        System.out.println( "Hello World! amel" );
-        System.out.println( "Hello World!amel" );
-
-    }
+public class App {
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+	}
 }
