@@ -57,7 +57,7 @@ public void convertXmlToJson(String ficXml)throws XMLStreamException,IOException
  * parsé.
  */
 	output.close();
-	input.close();
+	input.close(); 
 		}
 	}
 }
