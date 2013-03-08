@@ -23,40 +23,41 @@ public class XMLtoJSON {
  * @throws XMLStreamException
  * @throws IOException
  */
-	public void convertXmlToJson(String ficXml) throws XMLStreamException,
-			IOException {
-		InputStream input = XMLtoJSON.class.getResourceAsStream(ficXml);
-		PrintWriter output = new PrintWriter(new BufferedWriter(new FileWriter(
-				"ConversionXMLToJSON.json")));
+public void convertXmlToJson(String ficXml)throws XMLStreamException,IOException
+{
+	InputStream input = XMLtoJSON.class.getResourceAsStream(ficXml);
+	PrintWriter output = new PrintWriter(new BufferedWriter(new FileWriter(
+	"ConversionXMLToJSON.json")));
 /**Mise en place de la configuration du parseur Json to XML
  */
-		JsonXMLConfig config = new JsonXMLConfigBuilder().autoArray(true)
-				.autoPrimitive(true).prettyPrint(true).build();
-		try {
+	JsonXMLConfig config = new JsonXMLConfigBuilder().autoArray(true)
+	.autoPrimitive(true).prettyPrint(true).build();
+	try {
 /**Création d'un lecteur de fichier XML qui va lire le fichier xml
  * recu en entrée
  */
-			XMLEventReader reader = XMLInputFactory.newInstance()
-					.createXMLEventReader(input);
+	XMLEventReader reader = XMLInputFactory.newInstance()
+	.createXMLEventReader(input);
 /** Création d'un ecrivain de fichier JSON qui se chargera de
  * traduire le fichier XML au format Json .
  */
-			XMLEventWriter writer = new JsonXMLOutputFactory(config)
-					.createXMLEventWriter(output);
+	XMLEventWriter writer = new JsonXMLOutputFactory(config)
+	.createXMLEventWriter(output);
 /** Copie des événements du lecteur à l'écrivain.
  */
-			writer.add(reader);
+	writer.add(reader);
 /** Fermeture du lecteur et de l'écrivain.
  */
-			reader.close();
-			writer.close();
-		} finally {
+	reader.close();
+	writer.close();
+	} 
+	finally {
 /** Fermeture du fichier dans lequel se trouve le resultat du
  * traitement effectué. Fermeture également du fichier qui a été
  * parsé.
  */
-			output.close();
-			input.close();
+	output.close();
+	input.close();
 		}
 	}
 }
