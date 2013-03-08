@@ -24,7 +24,7 @@ public enum App {;
 public class App {
 	public static void main(String[] args) {
 		System.out.println( "Conversion JSON To XML " );   
-		Json_To_Xml convjsonxml=new Json_To_Xml();
+		JsonToXML convjsonxml=new JsonToXML();
 		convjsonxml.convertJsonToXml("fichier.json","sortie.xml"); 
 >>>>>>> c8cd36f922930f8b13b8a38bce78cf257786fb8e
 }
