@@ -1,6 +1,6 @@
 package dcll.nndi.projetdcll;
 
-<<<<<<< HEAD
+
 /**
  * Classe pour tester les convertions.
  * @author abddiallo amelGrim
@@ -20,11 +20,4 @@ public enum App {;
         JsonToXML convjsonxml = new JsonToXML();
         convjsonxml.convertJsonToXml("fichier.json", "sortie.xml");
     }
-=======
-public class App {
-	public static void main(String[] args) {
-		System.out.println( "Conversion JSON To XML " );   
-		JsonToXML convjsonxml=new JsonToXML();
-		convjsonxml.convertJsonToXml("fichier.json","sortie.xml"); 
->>>>>>> c8cd36f922930f8b13b8a38bce78cf257786fb8e
 }
